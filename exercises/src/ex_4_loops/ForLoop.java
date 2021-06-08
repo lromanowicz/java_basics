@@ -17,5 +17,20 @@ public class ForLoop {
 		for (int number : definedArray) {
 			System.out.println(number);
 		}
+
+		for (int number : definedArray) {
+			if (number % 2 == 0) {
+				continue;
+			}
+			System.out.println("Odd number: " + number);
+		}
+
+		for (int number : definedArray) {
+			if (number % 2 != 0) {
+				System.out.println("Loop breaks!");
+				break;
+			}
+			System.out.println("Loop goes on...");
+		}
 	}
 }
